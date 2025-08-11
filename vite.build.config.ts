@@ -6,15 +6,15 @@ export default defineConfig({
     build: {
         outDir: "../dist/cdn",
         lib: {
-            name: "<%= name %>",
-            entry: "<%= name %>.ts",
-            fileName: "<%= name %>",
+            name: "ilw-icon-panel",
+            entry: "ilw-icon-panel.ts",
+            fileName: "ilw-icon-panel",
             formats: ["es"],
         },
         rollupOptions: {
             output: {
                 assetFileNames: (chunkInfo) => {
-                    if (chunkInfo.name === "style.css") return "<%= name %>.css";
+                    if (chunkInfo.name === "style.css") return "ilw-icon-panel.css";
                     return "assets/[name]-[hash][extname]"; // vite default
                 },
             },

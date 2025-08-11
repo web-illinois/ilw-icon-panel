@@ -1,9 +1,9 @@
 {
-    "title": "<%= _.startCase(name.slice(4)) %>",
-    "tag": "<%= name %>",
-    "github": "https://github.com/web-illinois/<%= name %>/",
+    "title": "Icon Panel",
+    "tag": "ilw-icon-panel",
+    "github": "https://github.com/web-illinois/ilw-icon-panel/",
     "type": "web component",
-    "element-name": "<%= name %>",
+    "element-name": "ilw-icon-panel",
     "description": "Description for builder.",
     "purpose": "Imperative mood purpose for builder homepage.",
     "toolkit-version": "",
