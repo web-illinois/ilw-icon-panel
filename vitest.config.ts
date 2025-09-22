@@ -15,5 +15,6 @@ export default defineConfig({
             "/*.config.*",
             "**/test-axe/**",
         ],
+        passWithNoTests: true
     },
 });

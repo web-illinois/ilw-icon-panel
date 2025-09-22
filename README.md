@@ -11,6 +11,8 @@ essentially a smaller version of a Call to Action panel with an icon.
 
 It can be used either as a prominent link with a description attached, or with a heading and content.
 
+When used as a link, the link should be placed in the `slot="link"` slot.
+
 The icon always stays on the left side of the panel, even on mobile devices. The size of the icon
 is reduced and the spacing is tightened to fit the smaller screen.
 
@@ -32,7 +34,7 @@ for placing the icons, but it can also use an `<img>` tag or any other method of
 ```html
 <ilw-icon-panel>
     <ilw-icon slot="icon" icon="resources"></ilw-icon>
-    <a href="#">Graduate College Handbook (PDF)</a>
+    <a href="#" slot="link">Graduate College Handbook (PDF)</a>
     <p>Complete details of academic policies and requirements pertaining to graduate students as well as administrative
         policy for programs, units and staff.</p>
 </ilw-icon-panel>
