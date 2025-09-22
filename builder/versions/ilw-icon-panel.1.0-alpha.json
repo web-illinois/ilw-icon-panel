@@ -16,8 +16,13 @@
     "samples": [
         {
             "name": "default",
-            "description": "Default information",
-            "text": "<p>Lorem ipsum</p>"
+            "description": "With Link",
+            "text": "<ilw-icon slot=\"icon\" icon=\"resources\"></ilw-icon>\n<a href=\"#2\" slot=\"link\">Graduate College Handbook (PDF)</a>\n<p>Complete details of academic policies and requirements pertaining to graduate students as well as administrative\n    policy for programs, units and staff.</p>"
+        },
+        {
+            "name": "heading",
+            "description": "With Heading",
+            "text": "<ilw-icon slot=\"icon\" icon=\"students\"></ilw-icon>\n<h2>Support success at all stages of the student lifecycle</h2>\n<p><strong>Our commitment to student success begins from day one.</strong></p>\n<p>Complete details of academic policies and requirements pertaining to graduate students as well as administrative\n    policy for programs, units and staff.</p>"
         }
     ],
     "attributes-fixed": [],
@@ -28,15 +33,112 @@
             "description": "Color theme used",
             "depreciated": false,
             "values": [
-                "",
-                "blue",
-                "orange",
+                "gray",
                 "white"
+            ]
+        },
+        {
+            "name": "border",
+            "description": "Border color used",
+            "depreciated": false,
+            "values": [
+                "blue",
+                "orange"
             ]
         }
     ],
     "classes-fixed": [],
     "classes": [],
     "css-variables": [
+        {
+            "name": "--ilw-icon-panel--padding",
+            "depreciated": false,
+            "description": "Panel padding [default: 1.125rem 2.25rem 1.375rem 1.375rem]"
+        },
+        {
+            "name": "--ilw-icon-panel--icon-size",
+            "depreciated": false,
+            "description": "Icon size [default: 5rem]"
+        },
+        {
+            "name": "--ilw-icon-panel--margin",
+            "depreciated": false,
+            "description": "Margin around panel [default: 1.6rem 0]"
+        },
+        {
+            "name": "--ilw-icon-panel--border-width",
+            "depreciated": false,
+            "description": "Width of left border [default: 8px]"
+        },
+        {
+            "name": "--ilw-icon-panel--column-gap",
+            "depreciated": false,
+            "description": "Gap between icon and text [default: 1.375rem]"
+        },
+        {
+            "name": "--ilw-icon-panel--font-size",
+            "depreciated": false,
+            "description": "Font size for panel text [default: 1.125rem]"
+        },
+        {
+            "name": "--ilw-icon-panel--line-height",
+            "depreciated": false,
+            "description": "Line height for panel text [default: 1.667]"
+        },
+        {
+            "name": "--ilw-icon-panel--icon-vertical-space",
+            "depreciated": false,
+            "description": "Space above icon [default: 0.75rem]"
+        },
+        {
+            "name": "--ilw-icon-panel--mobile--padding",
+            "depreciated": false,
+            "description": "Mobile version padding [default: 1.125rem 1.8rem 1.375rem 0.5rem]"
+        },
+        {
+            "name": "--ilw-icon-panel--mobile--icon-size",
+            "depreciated": false,
+            "description": "Mobile version icon size [default: 3.7rem]"
+        },
+        {
+            "name": "--ilw-icon-panel--mobile--column-gap",
+            "depreciated": false,
+            "description": "Mobile version gap between icon and text [default: 0.8rem]"
+        },
+        {
+            "name": "--ilw-icon-panel--font-family",
+            "depreciated": false,
+            "description": "Font family for panel text [default: var(--il-font-sans)]"
+        },
+        {
+            "name": "--ilw-icon-panel--link-font-size",
+            "depreciated": false,
+            "description": "Font size for link slot [default: 1.25rem]"
+        },
+        {
+            "name": "--ilw-icon-panel--link-font-weight",
+            "depreciated": false,
+            "description": "Font weight for link slot [default: 700]"
+        },
+        {
+            "name": "--ilw-icon-panel--link-line-height",
+            "depreciated": false,
+            "description": "Line height for link slot [default: 1.2]"
+        },
+        {
+            "name": "--ilw-icon-panel--heading-font-size",
+            "depreciated": false,
+            "description": "Font size for heading [default: 1.875rem]"
+        },
+        {
+            "name": "--ilw-icon-panel--heading-font-weight",
+            "depreciated": false,
+            "description": "Font weight for heading [default: 600]"
+        },
+        {
+            "name": "--ilw-icon-panel--heading-line-height",
+            "depreciated": false,
+            "description": "Line height for heading [default: 1.2]"
+        }
     ]
 }

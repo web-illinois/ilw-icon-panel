@@ -4,8 +4,8 @@
     "github": "https://github.com/web-illinois/ilw-icon-panel/",
     "type": "web component",
     "element-name": "ilw-icon-panel",
-    "description": "Description for builder.",
-    "purpose": "Imperative mood purpose for builder homepage.",
+    "description": "A panel with an icon and some content, like a small call-to-action.",
+    "purpose": "Highlight information with an icon and text.",
     "toolkit-version": "",
     "production-version": "",
     "development-version": "1.0-alpha"

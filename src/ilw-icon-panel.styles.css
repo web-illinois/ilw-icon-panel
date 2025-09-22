@@ -1,29 +1,28 @@
 /* Styleable variables are in the base layer so they can be overridden easily */
 @layer base {
     :host {
-        --ilw-icon-panel--padding: 1.125rem 2.25rem 1.375rem 1.375rem;
-        --ilw-icon-panel--icon-size: 5rem;
-        --ilw-icon-panel--icon-padding: 0.5rem;
-        --ilw-icon-panel--margin: 1.6rem 0;
-        --ilw-icon-panel--border-width: 8px;
-        --ilw-icon-panel--column-gap: 1.375rem;
-        --ilw-icon-panel--font-size: 1.125rem;
-        --ilw-icon-panel--line-height: 1.667;
-        --ilw-icon-panel--icon-vertical-space: 0.75rem;
+        --ilw-icon-panel--padding: 1.125rem 2.25rem 1.375rem 1.375rem; /*var: Panel padding*/
+        --ilw-icon-panel--icon-size: 5rem; /*var: Icon size*/
+        --ilw-icon-panel--margin: 1.6rem 0; /*var: Margin around panel*/
+        --ilw-icon-panel--border-width: 8px; /*var: Width of left border*/
+        --ilw-icon-panel--column-gap: 1.375rem; /*var: Gap between icon and text*/
+        --ilw-icon-panel--font-size: 1.125rem; /*var: Font size for panel text*/
+        --ilw-icon-panel--line-height: 1.667; /*var: Line height for panel text*/
+        --ilw-icon-panel--icon-vertical-space: 0.75rem; /*var: Space above icon*/
 
-        --ilw-icon-panel--mobile--padding: 1.125rem 1.8rem 1.375rem 0.5rem;
-        --ilw-icon-panel--mobile--icon-size: 3.7rem;
-        --ilw-icon-panel--mobile--column-gap: 0.8rem;
+        --ilw-icon-panel--mobile--padding: 1.125rem 1.8rem 1.375rem 0.5rem; /*var: Mobile version padding*/
+        --ilw-icon-panel--mobile--icon-size: 3.7rem; /*var: Mobile version icon size*/
+        --ilw-icon-panel--mobile--column-gap: 0.8rem; /*var: Mobile version gap between icon and text*/
 
-        --ilw-icon-panel--font-family: var(--il-font-sans);
+        --ilw-icon-panel--font-family: var(--il-font-sans); /*var: Font family for panel text*/
 
-        --ilw-icon-panel--link-font-size: 1.25rem;
-        --ilw-icon-panel--link-font-weight: 700;
-        --ilw-icon-panel--link-line-height: 1.2;
+        --ilw-icon-panel--link-font-size: 1.25rem; /*var: Font size for link slot*/
+        --ilw-icon-panel--link-font-weight: 700; /*var: Font weight for link slot*/
+        --ilw-icon-panel--link-line-height: 1.2; /*var: Line height for link slot*/
 
-        --ilw-icon-panel--heading-font-size: 1.875rem;
-        --ilw-icon-panel--heading-font-weight: 600;
-        --ilw-icon-panel--heading-line-height: 1.2;
+        --ilw-icon-panel--heading-font-size: 1.875rem; /*var: Font size for heading*/
+        --ilw-icon-panel--heading-font-weight: 600; /*var: Font weight for heading*/
+        --ilw-icon-panel--heading-line-height: 1.2; /*var: Line height for heading*/
     }
 }
 
