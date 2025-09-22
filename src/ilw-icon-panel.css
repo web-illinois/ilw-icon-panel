@@ -10,6 +10,16 @@ ilw-icon-panel {
         font-size: var(--ilw-icon-panel--icon-size);
         color: var(--ilw-color--heading);
     }
+    svg[slot="icon"], [slot="icon"] svg {
+        width: auto;
+        height: auto;
+    }
+    img[slot="icon"], [slot="icon"] img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
 
     a[slot="link"], [slot="link"] a {
         color: var(--ilw-color--link);
