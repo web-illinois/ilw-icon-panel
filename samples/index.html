@@ -7,11 +7,68 @@
     <title>Icon Panel Component</title>
     <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
     <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
+    <script type="module" src="https://cdn.toolkit.illinois.edu/ilw-icon/1.1.0/ilw-icon.js"></script>
+    <link rel="stylesheet" href="https://cdn.toolkit.illinois.edu/ilw-icon/1.1.0/ilw-icon.css">
     <script type="module" src="/src/ilw-icon-panel.ts"></script>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 20px auto;
+        }
+    </style>
 </head>
 
-<body style="margin: 0; padding: 0;">
-<ilw-icon-panel></ilw-icon-panel>
+<body>
+
+<ilw-icon-panel>
+    <ilw-icon slot="icon" icon="resources"></ilw-icon>
+    <a href="#2" slot="link">Graduate College Handbook (PDF)</a>
+    <p>Complete details of academic policies and requirements pertaining to graduate students as well as administrative
+        policy for programs, units and staff.</p>
+</ilw-icon-panel>
+<ilw-icon-panel>
+    <ilw-icon slot="icon" icon="students"></ilw-icon>
+    <h3>Support success at all stages of the student lifecycle</h3>
+    <p><strong>Our commitment to student success begins from day one.</strong></p>
+    <p>Complete details of academic policies and requirements pertaining to graduate students as well as administrative
+        policy for programs, units and staff.</p>
+</ilw-icon-panel>
+<ilw-icon-panel theme="gray">
+    <ilw-icon slot="icon" icon="resources"></ilw-icon>
+    <a href="#2" slot="link">Graduate College Handbook (PDF)</a>
+    <p>Complete details of academic policies and requirements pertaining to graduate students as well as administrative
+        policy for programs, units and staff.</p>
+</ilw-icon-panel>
+<ilw-icon-panel theme="gray">
+    <ilw-icon slot="icon" icon="students"></ilw-icon>
+    <h3>Support success at all stages of the student lifecycle</h3>
+    <p><strong>Our commitment to student success begins from day one.</strong></p>
+    <p>Complete details of academic policies and requirements pertaining to graduate students as well as administrative
+        policy for programs, units and staff.</p>
+</ilw-icon-panel>
+
+<!-- mobile-size with container queries -->
+<div style="width: 400px; border: 1px solid lightgray; padding: 10px; margin-bottom: 20px;">
+    <ilw-icon-panel>
+        <ilw-icon slot="icon" icon="resources"></ilw-icon>
+        <a href="#2" slot="link">Graduate College Handbook (PDF)</a>
+        <p>Complete details of academic policies and requirements pertaining to graduate students as well as administrative
+            policy for programs, units and staff.</p>
+    </ilw-icon-panel>
+    <ilw-icon-panel theme="gray" border="orange">
+        <ilw-icon slot="icon" icon="resources"></ilw-icon>
+        <a href="#2" slot="link">Graduate College Handbook (PDF)</a>
+        <p>Complete details of academic policies and requirements pertaining to graduate students as well as administrative
+            policy for programs, units and staff.</p>
+    </ilw-icon-panel>
+    <ilw-icon-panel theme="gray">
+        <ilw-icon slot="icon" icon="students"></ilw-icon>
+        <h3>Support success at all stages of the student lifecycle</h3>
+        <p><strong>Our commitment to student success begins from day one.</strong></p>
+        <p>Complete details of academic policies and requirements pertaining to graduate students as well as administrative
+            policy for programs, units and staff.</p>
+    </ilw-icon-panel>
+</div>
 </body>
 
 </html>

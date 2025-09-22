@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Card Component</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.brand.illinois.edu/illinois.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css"
+        />
+        <script type="module" src="https://cdn.toolkit.illinois.edu/ilw-icon/1.1.0/ilw-icon.js"></script>
+        <link rel="stylesheet" href="https://cdn.toolkit.illinois.edu/ilw-icon/1.1.0/ilw-icon.css">
+        <script type="module" src="../src/ilw-icon-panel.ts"></script>
+    </head>
+    <style>
+        body {
+            padding: 15px;
+            font-size: 16px;
+            font-family: var(--il-font-sans);
+            background: #f4f4f4;
+        }
+    </style>
+    <body>
+        <h1>Card Component</h1>
+
+        <div id="grid">
+
+            <ilw-icon-panel id="link">
+                <ilw-icon slot="icon" icon="resources"></ilw-icon>
+                <a href="#2" slot="link">Graduate College Handbook (PDF)</a>
+                <p>Complete details of academic policies and requirements pertaining to graduate students as well as administrative
+                    policy for programs, units and staff.</p>
+            </ilw-icon-panel>
+            <ilw-icon-panel id="heading">
+                <ilw-icon slot="icon" icon="students"></ilw-icon>
+                <h3>Support success at all stages of the student lifecycle</h3>
+                <p><strong>Our commitment to student success begins from day one.</strong></p>
+                <p>Complete details of academic policies and requirements pertaining to graduate students as well as administrative
+                    policy for programs, units and staff.</p>
+            </ilw-icon-panel>
+        </div>
+
+        <script type="module">
+            import { createVariations } from "@illinois-toolkit/ilw-core";
+            import IconPanel from "../src/ilw-icon-panel.js";
+
+            createVariations(
+                document.getElementById("grid"),
+                IconPanel,
+                {
+                    theme: [
+                        "white",
+                        "gray",
+                        "orange",
+                        "blue",
+                        "orange-gradient",
+                        "blue-gradient",
+                    ],
+                    border: ["orange", "blue"],
+                    "data-simulated-hover": [undefined, "true"],
+                    "data-simulated-focus": [undefined, "true"],
+                },
+                ["link", "heading"],
+            );
+        </script>
+    </body>
+</html>

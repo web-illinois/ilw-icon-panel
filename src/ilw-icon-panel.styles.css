@@ -1,9 +1,89 @@
 /* Styleable variables are in the base layer so they can be overridden easily */
 @layer base {
     :host {
+        --ilw-icon-panel--padding: 1.125rem 2.25rem 1.375rem 1.375rem;
+        --ilw-icon-panel--icon-size: 5rem;
+        --ilw-icon-panel--icon-padding: 0.5rem;
+        --ilw-icon-panel--margin: 1.6rem 0;
+        --ilw-icon-panel--border-width: 8px;
+        --ilw-icon-panel--column-gap: 1.375rem;
+        --ilw-icon-panel--font-size: 1.125rem;
+        --ilw-icon-panel--line-height: 1.667;
+        --ilw-icon-panel--icon-vertical-space: 0.75rem;
 
+        --ilw-icon-panel--mobile--padding: 1.125rem 1.8rem 1.375rem 0.5rem;
+        --ilw-icon-panel--mobile--icon-size: 3.7rem;
+        --ilw-icon-panel--mobile--column-gap: 0.8rem;
+
+        --ilw-icon-panel--font-family: var(--il-font-sans);
+
+        --ilw-icon-panel--link-font-size: 1.25rem;
+        --ilw-icon-panel--link-font-weight: 700;
+        --ilw-icon-panel--link-line-height: 1.2;
+
+        --ilw-icon-panel--heading-font-size: 1.875rem;
+        --ilw-icon-panel--heading-font-weight: 600;
+        --ilw-icon-panel--heading-line-height: 1.2;
     }
 }
 
+
 :host {
+    display: block;
+    container-type: inline-size;
+}
+
+.ilw-icon-panel {
+    display: block;
+    box-sizing: border-box;
+    padding: var(--ilw-icon-panel--padding);
+    margin: var(--ilw-icon-panel--margin);
+    border-left: var(--ilw-icon-panel--border-width) solid var(--ilw-color--control-text);
+    font-family: var(--ilw-icon-panel--font-family);
+    background: var(--ilw-color--background);
+    color: var(--ilw-color--text);
+    font-size: var(--ilw-icon-panel--font-size);
+    line-height: var(--ilw-icon-panel--line-height);
+}
+
+@container (width < 600px) {
+    .ilw-icon-panel {
+        --ilw-icon-panel--padding: var(--ilw-icon-panel--mobile--padding);
+        --ilw-icon-panel--icon-size: var(--ilw-icon-panel--mobile--icon-size);
+        --ilw-icon-panel--column-gap: var(--ilw-icon-panel--mobile--column-gap);
+    }
+}
+
+/* slotted p should have no margin */
+:host ::slotted(p:first-of-type) {
+    margin-top: 0;
+}
+:host ::slotted(p:last-of-type) {
+    margin-bottom: 0;
+}
+
+.link-wrapper {
+    display: none;
+
+    &.has-link {
+        display: block;
+    }
+}
+
+.ilw-icon-panel {
+    display: flex;
+    column-gap: var(--ilw-icon-panel--column-gap);
+}
+
+.ilw-icon-panel--orange {
+    border-left-color: var(--ilw-color--control-accent);
+}
+
+.icon-wrapper {
+    margin-top: var(--ilw-icon-panel--icon-vertical-space);
+    width: var(--ilw-icon-panel--icon-size);
+    height: var(--ilw-icon-panel--icon-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
