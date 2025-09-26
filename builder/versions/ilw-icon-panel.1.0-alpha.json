@@ -13,6 +13,15 @@
     "production": false,
     "notes": "",
     "parent-style": "margin: 0 auto; max-width: 800px; padding: 15px;",
+    "added-components" : [
+        {
+            "name": "Icon",
+            "description": "You can use the icon component inside the icon panel.",
+            "link": "https://builder3.toolkit.illinois.edu/component/ilw-icon/1-1/index.html",
+            "css": "https://cdn.toolkit.illinois.edu/ilw-icon/1/ilw-icon.css",
+            "js": "https://cdn.toolkit.illinois.edu/ilw-icon/1/ilw-icon.js"
+        }
+    ],
     "samples": [
         {
             "name": "default",
@@ -23,6 +32,11 @@
             "name": "heading",
             "description": "With Heading",
             "text": "<div slot=\"icon\" style=\"background: currentColor; width: 1.7em; height: 1.7em; -webkit-mask: url(https://cdn.brand.illinois.edu/icons/solid/blue/location.svg?no-cache) no-repeat center; mask: url(https://cdn.brand.illinois.edu/icons/solid/blue/location.svg?no-cache) no-repeat center;\" aria-hidden=\"true\"></div>\n<h2>Support success at all stages of the student lifecycle</h2>\n<p><strong>Our commitment to student success begins from day one.</strong></p>\n<p>Complete details of academic policies and requirements pertaining to graduate students as well as administrative\n    policy for programs, units and staff.</p>"
+        },
+        {
+            "name": "icon-component",
+            "description": "With Icon Component",
+            "text": "<ilw-icon slot=\"icon\" icon=\"handbook\"></ilw-icon>\n<a href=\"#2\" slot=\"link\">Graduate College Handbook (PDF)</a>\n<p>Complete details of academic policies and requirements pertaining to graduate students as well as administrative policy for programs, units and staff.</p>"
         }
     ],
     "attributes-fixed": [],
