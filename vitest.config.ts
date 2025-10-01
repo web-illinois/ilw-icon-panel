@@ -16,7 +16,6 @@ export default defineConfig({
             "**/.{idea,git,cache,output,temp}/**",
             "/*.config.*",
             "**/test-axe/**",
-        ],
-        passWithNoTests: true
+        ]
     },
 });

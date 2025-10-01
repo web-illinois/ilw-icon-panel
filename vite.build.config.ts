@@ -11,13 +11,6 @@ export default defineConfig({
             fileName: "ilw-icon-panel",
             formats: ["es"],
         },
-        rollupOptions: {
-            output: {
-                assetFileNames: (chunkInfo) => {
-                    return "[name][extname]";
-                },
-            },
-        },
     },
     server: {
         hmr: false,
