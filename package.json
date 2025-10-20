@@ -39,7 +39,7 @@
     "devDependencies": {
         "@illinois-toolkit/ilw-core": "^1.0.2",
         "typescript": "^5.9.2",
-        "vite": "7.1.5",
+        "vite": "7.1.11",
         "vite-plugin-dts": "^4.5.4",
         "@playwright/test": "^1.54.1",
         "@vitest/browser": "^3.2.4",
