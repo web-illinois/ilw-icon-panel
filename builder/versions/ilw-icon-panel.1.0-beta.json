@@ -6,10 +6,10 @@
     "element-name": "ilw-icon-panel",
     "description": "Description for builder.",
     "builder-version": "1.0-beta",
-    "version": "1.0.0-beta",
+    "version": "1.0.1-beta",
     "date": "10/01/2025",
-    "css": "https://dev.toolkit.illinois.edu/ilw-icon-panel/1.0.0-beta/ilw-icon-panel.css",
-    "js": "https://dev.toolkit.illinois.edu/ilw-icon-panel/1.0.0-beta/ilw-icon-panel.js",
+    "css": "https://dev.toolkit.illinois.edu/ilw-icon-panel/1.0.1-beta/ilw-icon-panel.css",
+    "js": "https://dev.toolkit.illinois.edu/ilw-icon-panel/1.0.1-beta/ilw-icon-panel.js",
     "production": false,
     "notes": "",
     "parent-style": "margin: 0 auto; max-width: 800px; padding: 15px;",
@@ -52,8 +52,8 @@
             ]
         },
         {
-            "name": "border",
-            "description": "Border color used",
+            "name": "accent",
+            "description": "Accent color used for the left border",
             "depreciated": false,
             "values": [
                 "blue",

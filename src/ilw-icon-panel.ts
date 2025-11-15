@@ -8,7 +8,7 @@ import { classMap } from "lit/directives/class-map.js";
 @customElement("ilw-icon-panel")
 export default class IconPanel extends LitElement {
     @property()
-    border: "blue" | "orange" = "blue";
+    accent: "blue" | "orange" = "blue";
 
     @state()
     _hasLink: boolean = false;
@@ -34,8 +34,8 @@ export default class IconPanel extends LitElement {
     render() {
         let classList = {
             "ilw-icon-panel": true,
-            "ilw-icon-panel--blue": this.border === "blue",
-            "ilw-icon-panel--orange": this.border === "orange",
+            "ilw-icon-panel--blue": this.accent === "blue",
+            "ilw-icon-panel--orange": this.accent === "orange",
         };
         return html`
             <div class=${classMap(classList)}>
