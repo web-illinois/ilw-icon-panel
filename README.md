@@ -25,7 +25,8 @@ for placing the icons, but it can also use an `<img>` tag or any other method of
 
 ### Attributes
 
-- `theme="orange"` uses orange for the accent.
+- `theme="white"` uses a white background.
+- `accent="orange"` or `accent="blue"` changes the accent color of the panel.
 
 ## Code Examples
 
