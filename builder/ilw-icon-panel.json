@@ -7,6 +7,6 @@
     "description": "A panel with an icon and some content, like a small call-to-action.",
     "purpose": "Highlight information with an icon and text.",
     "toolkit-version": "",
-    "production-version": "",
-    "development-version": "1.0-beta"
+    "production-version": "1.0",
+    "development-version": "1.0"
 }
