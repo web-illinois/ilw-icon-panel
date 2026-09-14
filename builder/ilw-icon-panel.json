@@ -1,12 +1,16 @@
 {
-    "title": "Icon Panel",
-    "tag": "ilw-icon-panel",
-    "github": "https://github.com/web-illinois/ilw-icon-panel/",
-    "type": "web component",
-    "element-name": "ilw-icon-panel",
-    "description": "A panel with an icon and some content, like a small call-to-action.",
-    "purpose": "Highlight information with an icon and text.",
-    "toolkit-version": "",
-    "production-version": "1.0",
-    "development-version": "1.0"
+  "title": "Icon Panel",
+  "id": "ilw-icon-panel",
+  "type": "Web Component",
+  "repository-name": "ilw-icon-panel",
+  "description": "Highlight a concise message, feature, or action by pairing an Illinois icon with supporting text.",
+  "purpose": "Highlight information with an icon and text.",
+  "customtemplates": [],
+  "versions": [
+    {
+      "name": "1.0",
+      "notes": "",
+      "template": "1.0"
+    }
+  ]
 }
